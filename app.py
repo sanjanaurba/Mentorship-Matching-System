@@ -176,7 +176,7 @@ def match_mentees_to_mentors(mentees_df, mentors_df):
 
                 # Organize mentees list with names and scores 
                 mentee_scores.append({
-                    'Mentee Name': mentee_row['Full Name'],  # Ensure the column name matches your data
+                    'Mentee Name': mentee_row['Full Name'],  
                     'Mentee Difference Score': total_difference
                 })
 
