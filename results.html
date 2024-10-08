@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Results</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Matching Results</h1>
+        <h2>Mentee Matches:</h2>
+        <ul>
+            {% for mentee, mentor in mentee_matches.items() %}
+            <li>{{ mentee }} is matched with {{ mentor }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Unmatched Mentors:</h2>
+        <ul>
+            {% for mentor in unmatched_mentors %}
+            <li>{{ mentor }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Unmatched Mentees:</h2>
+        <ul>
+            {% for mentee in unmatched_mentees %}
+            <li>{{ mentee }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/" class="btn btn-secondary mt-4">Back to Home</a>
+    </div>
+</body>
+</html>

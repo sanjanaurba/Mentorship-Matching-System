@@ -1,0 +1,99 @@
+/* Importing cursive font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes:wght@400;700&display=swap');
+
+/* Body styling */
+body {
+    background: linear-gradient(135deg, #e4e8f1, #d3c3e3); /* Soft gradient for background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items towards the top */
+    height: 100vh;
+    padding-top: 50px; /* Add padding to move content down */
+}
+
+/* Styling for the form container */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px;
+    width: 100%;
+    margin-top: 20px; /* Add margin to move form slightly down */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mentorship Matching heading */
+h1 {
+    font-family: 'Great Vibes', cursive; /* Cursive font for the heading */
+    font-size: 3em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive; /* Cursive font for the heading */
+    font-size: 3em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* Label styles */
+label {
+    font-family: 'Quando', sans-serif;
+    font-size: 1.2em;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Input file and button styles */
+input[type="file"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Button styles */
+.btn-primary  {
+    background-color: #996eb2;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: #ac7dc8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Hover effect for the button */
+.btn-primary:hover  {
+    background-color: #765094; /* Darker purple for hover effect */
+}
+
+/* Spacing for the form groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
